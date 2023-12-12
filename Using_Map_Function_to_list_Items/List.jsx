@@ -1,4 +1,4 @@
-
+import "./listcss.css";
 const list=[
  {
     id:1,
