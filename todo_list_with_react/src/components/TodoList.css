@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(155, 252, 29);
+}
+.todo-container{
+    max-width: 400px;
+    margin: 20px auto;
+    padding:10px;
+    border:3px solid rgb(9, 28, 232);
+    border-radius: 10px;
+    background-color: rgb(149, 42, 250);
+    box-shadow: 3px 4px 4px #151111;
+}
+
+h1{
+    color:  rgb(155, 252, 29);
+    text-align: center;
+}
+
+.input-section{
+    display: flex;
+    margin-bottom: 10px;
+}
+.input-field{
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px 0 10px 0;
+    border: 1px solid  rgb(155, 252, 29);
+}
+.add-btn,.update-btn,.cancel-btn{
+    padding:8px;
+    border:none;
+    border-radius: 10px,0,10px,0;
+    cursor: pointer;
+    background-color: rgb(80, 234, 154);
+    font-size: 20px;
+}
+.add-btn:hover , .update-btn:hover,.cancel-btn:hover{
+background-color: #151111;
+color: rgb(155, 252, 29);
+border: 1px solid rgb(155, 252, 29);
+
+}
+.todo-list{
+    list-style: none;
+    padding: 0;
+}
+.todo-list li{
+    margin-right: 8px;
+    padding: 4px;
+    border-radius: 10px 0 10px 0;
+    border: 1px solid  rgb(155, 252, 29);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px black;
+}
+.todo-list li.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.btn-group button{
+    margin-left: 0;
+    padding: 5px;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+    background-color: inherit;
+    font-size: 20px;
+    font-weight:400
+}
+
+.btn-edit{
+    color:green;
+
+}
+.btn-remove{
+    color: red;
+}
+.btn-done{
+    color:yellow;
+}
+.btn-group:hover{
+    opacity: 0.8;
+}
